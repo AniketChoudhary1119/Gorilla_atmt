@@ -1,7 +1,7 @@
 /*
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-AUTHOR : Vijayan PP
-PROJECT : Nim-MUTLIT PURPOSE LANDING PAGE TEMPLATE
+AUTHOR : Aniket Choudhary
+PROJECT : GorillaAtmt
 VERSION : 1.1
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
@@ -553,8 +553,8 @@ p.lead
     
 }
 .item-img-overlay span{
-    width: 100%;
-    height: 100%;
+   /* width: 100%; 
+    height: 100%;*/
     position: absolute;
     top: 0;
     left: 0;

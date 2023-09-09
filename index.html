@@ -46,23 +46,55 @@ VERSION : 1.1
 <div id="san">
 <a href="#" class="close agree"><img src="close page.jpeg" width="25" style="float:right; margin-right: -25px; margin-top: -20px;"></a>
 
-<form action="insert.php" method="post">
-    <label>Name</label>  
-	<span class="required">*</span>   
-        <input type="text" name="name" placeholder="Enter your Name.." ></br>
-		
-		
-    <label>Phone</label> 
-	<span class="required">*</span>
-        <input type="text" name="mobile" placeholder="Phone number.."></br>
-	
-	<label>Email</label>
-        <input type="text"  name="email" placeholder="Enter your emal adders.."></br>
-		
-	<input type="submit" value="Submit">	
+<style>
+input[type=text],input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#di {
+  border-radius: 5px;
+  
+  padding: 20px;
+}
+</style>
+<body>
 
 
-</form>
+
+<div id="di">
+  <form action="insert.php" method="post">
+  <label for="fname">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+
+    <label for="lname">Mobile</label>
+    <input type="text" id="lname" name="mobile" placeholder="Your Mobile..">
+
+    <label for="lname">Email</label>
+    <input type="email" id="lname" name="email" placeholder="Your email..">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </div>
 </div>
 <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
@@ -88,16 +120,16 @@ VERSION : 1.1
    <!-- Navigation
     ==========================================-->
     <nav  class=" nim-menu navbar navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="container" >
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header"  >
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="index.html">Go<span class="themecolor">ril</span>la</a>
+            <a class="navbar-brand" href="index.html" ><img src="images/icon.jpeg" style="width:100px;height:60px;float:left;padding-right:10px;"></img> Go<span class="themecolor">ril</span>la</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -146,38 +178,20 @@ VERSION : 1.1
  <section class="aboutus white-background black" id="one">
      <div class="container">
          <div class="row">
-             <div class="col-md-12 text-center black">
-                 <h3 class="title">ABOUT <span class="themecolor">US</span></h3>
-            <p class="a-slog">Technoecorp Service is a customer-oriented transformational worldwide IT solutions and services partner. We are the best mobile security provider in India. Technoecorp is an organisation of committed scientist ceaselessly sketch revolutionary defence software to protect personal data from menace and burglars. Gorilla Application will help you to recover your mobile by capturing photos from the camera and timely live location captured from the theft phone. Gorilla Application helps you to guard your mobile against intruders using his alarm system to warn you about the threatening danger. We provide you with more than 20+ features that will assure your security from intruders. After long, backbreaking work, and many revisions, we grew to become a universal solution that concentrates on two purposes. First, to serve our users bother less about theft. And second, provide them with the mechanisms to hold a chance against missing devices, and their data. Gorilla Application helps you to monitor your child activities, which will provide you with a detailed summary of the activities for your child. Gorilla Application also provides a women's safety feature by tapping the power button to trigger safety action. We also help you to clean your mobile cache using Gorilla Booster, Which will help to clear your phone memory. There are many more to come as well. We keep researching for more security measures that will ensure your mobile security. Come and onboard with us for your mobile security.</p> 
-             </div>
+             <div class="col-md-6 text-center black">
+                 <h3 class="title">ABOUT <span class="themecolor">US</span></h3>    
+                <p class="a-slog">Technoecorp Service is a customer-oriented transformational worldwide IT solutions and services partner. We are the best mobile security provider in India. Technoecorp is an organisation of committed scientist ceaselessly sketch revolutionary defence software to protect personal data from menace and burglars. Gorilla Application will help you to recover your mobile by capturing photos from the camera and timely live location captured from the theft phone. Gorilla Application helps you to guard your mobile against intruders using his alarm system to warn you about the threatening danger. We provide you with more than 20+ features that will assure your security from intruders. After long, backbreaking work, and many revisions, we grew to become a universal solution that concentrates on two purposes. First, to serve our users bother less about theft. And second, provide them with the mechanisms to hold a chance against missing devices, and their data. Gorilla Application helps you to monitor your child activities, which will provide you with a detailed summary of the activities for your child. Gorilla Application also provides a women's safety feature by tapping the power button to trigger safety action. We also help you to clean your mobile cache using Gorilla Booster, Which will help to clear your phone memory. There are many more to come as well. We keep researching for more security measures that will ensure your mobile security. Come and onboard with us for your mobile security.</p>             
+			</div>
+			 <div class="col-md-6 text-center black">
+			 
+			 <embed src="vid.mp4" style="width:700px;height:600px;"></embed>
+			 </div>
          </div>
          <div class="gap">
              
          </div>
          
-         <div class="row about-box">
-          <div class="col-sm-4 text-center">
-            <div class="margin-bottom">
-              <i class="fa fa-newspaper-o"></i>
-              <h4>Live Location</h4>
-              <p class="black">Get a live location update of your mobile in case of emergency or mobile loss.</p>
-            </div> <!-- / margin -->
-          </div> <!-- /col -->
-          <div class="col-sm-4 about-line text-center">
-            <div class="margin-bottom">
-              <i class="fa fa-diamond"></i>
-              <h4>Sim card lock</h4>
-              <p class="black">Lock your mobile whenever someone tries to remove your SIM.</p>
-            </div> <!-- / margin -->
-          </div><!-- /col -->
-          <div class="col-sm-4 text-center">
-            <div class="margin-bottom">
-              <i class="fa fa-area-chart"></i>
-              <h4>Women Safety</h4>
-              <p class="black">Photo link and location link notification will receive via SMS in case of emergency.</p>
-            </div> <!-- / margin -->
-          </div><!-- /col -->
-        </div> <!-- /row -->
+         
          
          
          
@@ -198,7 +212,7 @@ VERSION : 1.1
         <div class="row">
           <div class="col-md-12">
               <h3 class="title">Recent <span class="themecolor">Product</span></h3>
-            <p class="a-slog">Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty</p>
+            <p class="a-slog">     <!-- yaha koe punch line likhna h -->  </p>
           </div> 
         </div>
           
@@ -207,7 +221,7 @@ VERSION : 1.1
         <div class="row">
           <div class="col-sm-4 port-item margin-bottom">
             <div class="item-img-wrap">
-              <img src="images/work-1.JPEG" class="img-responsive" alt="workimg">
+              <img src="images/work-1.JPEG" class="img-responsive" alt="workimg" style="width:370px ; height:370px;">
               <div class="item-img-overlay">
                 <a href="images/work-1.JPEG" class="show-image">
                   <span></span>
@@ -222,7 +236,7 @@ VERSION : 1.1
 
           <div class="col-sm-4 port-item margin-bottom">
             <div class="item-img-wrap">
-              <img src="images/work-2.JPG" class="img-responsive" alt="workimg" >
+              <img src="images/work-2.JPG" class="img-responsive" alt="workimg" style="width:370px ; height:370px;">
               <div class="item-img-overlay">
                 <a href="images/work-2.JPG" class="show-image">
                   <span></span>
@@ -237,7 +251,7 @@ VERSION : 1.1
 
           <div class="col-sm-4 port-item margin-bottom">
             <div class="item-img-wrap">
-              <img src="images/work-3.JPG" class="img-responsive" alt="workimg">
+              <img src="images/work-3.JPG" class="img-responsive" alt="workimg" style="width:370px ; height:370px;">
               <div class="item-img-overlay">
                 <a href="images/work-3.JPG" class="show-image">
                   <span></span>
@@ -338,7 +352,7 @@ VERSION : 1.1
               <i class="fa fa-paypal"></i>
               <div class="nim-service-detail">
                 <h4>Dedicated Support</h4>
-                <p>Lorem ipsum dolor sit amet ne onsectetuer adipiscing elit. Aenean commodo ligula eget dolor in tashin ty dolor site amet ne onseceruter adipiscing</p>
+                <p>You’ll need someone who knows your gadget technology, knows how to take care of your gadget, and is reliable. </p>
               </div> <!-- /nim-service-detail -->
             </div> <!-- /nim-service margin-bottom -->
           </div> <!-- /col -->         
@@ -395,12 +409,7 @@ VERSION : 1.1
     <div class="row">
         <div class="col-md-3 col-sm-3"></div>
       <div class="col-md-6 center-block col-sm-6 ">
-        <form id="mc-form">
-          <div class="input-group">
-            <input type="email" class="form-control" placeholder="Email Address" required id="mc-email">
-            <span class="input-group-btn">
-            <button type="submit" class="btn btn-default">SUBSCRIBE <i class="fa fa-envelope"></i> </button>
-            </span> </div>
+        
           <label for="mc-email" id="mc-notification"></label>
 		  <p class="lead">Technoecorp Services Pvt Ltd</br>
 C-180 Chhatra chaya, Industrial Area Sec No 1,Pithampur
@@ -437,7 +446,7 @@ Ph. +91-9981551672</p>
         
         <ul class="social">
           <li><a href="https://www.facebook.com/TECHNOECORPSERVICE" target="_blank"><i class="fa fa-facebook "></i></a></li>
-          <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.instagram.com/technoecorp/" target="_blank"><i class="fa fa-instagram"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UC9PbG4n7hkRpekdNm0tKfkQ/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
 		  <li><a href="https://t.me/technoecorp/" target="_blank"><i class="fa fa-telegram"></i></a></li>
         </ul>
